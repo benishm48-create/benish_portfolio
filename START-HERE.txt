@@ -1,0 +1,17 @@
+BENISH — 3D PORTFOLIO
+
+1. Extract the ZIP.
+2. Open the extracted folder containing package.json in VS Code.
+3. Terminal > New Terminal.
+4. Run: npm install
+5. Run: npm run dev
+6. Open the localhost URL printed in the terminal.
+
+Requires Node.js 20.19 or newer.
+
+Blender is NOT required to run the website.
+Editable Blender projects are inside the blender folder.
+Your personal details and links are in src/data.js.
+Your original resume is included in public/Benish-M-Resume.pdf.
+
+Full setup, asset editing and hosting instructions: README.md

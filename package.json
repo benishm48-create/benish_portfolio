@@ -1,0 +1,26 @@
+{
+  "name": "benish-3d-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "three": "0.180.0",
+    "@react-three/fiber": "9.3.0",
+    "@react-three/drei": "10.7.6",
+    "lucide-react": "0.468.0",
+    "@fontsource/inter": "5.2.6"
+  },
+  "devDependencies": {
+    "vite": "6.1.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

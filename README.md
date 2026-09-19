@@ -2,30 +2,6 @@
 
 A custom React + Vite portfolio featuring original Blender scenes, an interactive HP Victus-style desk setup, and a seated music-listening character.
 
-## Start the website
-
-Install Node.js 20.19+ (Node.js 22 LTS is suitable). Extract this ZIP, then open a terminal **inside the folder containing package.json**.
-
-```bash
-npm install
-npm run dev
-```
-
-Open the local URL printed by Vite, usually http://localhost:5173.
-
-For Ubuntu, right-click inside the extracted folder and choose Open in Terminal. For Windows, open the folder in VS Code and choose Terminal > New Terminal.
-
-Do not double-click index.html: the 3D model loader requires an HTTP server.
-
-## Build for hosting
-
-```bash
-npm run build
-npm run preview
-```
-
-The `dist` folder is the static production website. Upload its contents to a static host. The project does not depend on Sites, Cloudflare Workers or an `.openai/hosting.json` file.
-
 ## What to edit
 
 | File | Purpose |
@@ -45,19 +21,6 @@ The model filenames are `hero-workspace.glb` and `about-workspace.glb`.
 ## Blender source
 
 Open the provided `.blend` files in Blender 4.3 or newer. Scene objects are named individually: desk, chair, laptop chassis, screen, keyboard keys, lamp, plant and character parts. Textures are packed into the Blender files and GLB assets.
-
-To rebuild the scenes from the project root:
-
-```bash
-blender --background --python blender/create-scenes.py
-```
-
-This creates both editable `.blend` scenes, both `.glb` exports and transparent PNG renders. The web fallback uses WebP copies; convert regenerated PNGs with:
-
-```bash
-python -m pip install Pillow
-python scripts/convert-previews.py
-```
 
 Blender is only needed to edit or rebuild the 3D assets. It is **not required to run the website**.
 
